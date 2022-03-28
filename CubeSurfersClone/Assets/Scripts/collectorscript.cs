@@ -39,6 +39,7 @@ public class collectorscript : MonoBehaviour
             player.transform.Rotate(0, 90, 0);
             mycamera.GetComponent<camerascript>().offsetsetter(new Vector3(-10,5,-3));
             player.GetComponent<SwerweMovement>().SwerweDirectionSetter(2);
+            other.gameObject.GetComponent<BoxCollider>().enabled = false;
         }
 
         if (other.transform.CompareTag("crystal"))
